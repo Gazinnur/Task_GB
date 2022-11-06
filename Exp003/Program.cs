@@ -1,5 +1,15 @@
-﻿// Даны два числа. Показать большее и меньшее число
-int A=5;
-int B=2;
-if(A>B) Console.WriteLine($"Число {A} большее, а число {B} меньшее");
-else Console.WriteLine($"Число {B} большее, а число {A} меньшее");
+﻿// По заданному номеру дня недели вывести его название
+Console.WriteLine("Введите номер деня недали");
+int Num = Convert.ToInt32(Console.ReadLine());
+if (Num>7||Num<1)
+{
+    Console.WriteLine("В недели 7 дней");
+    
+}
+else 
+{if (Num<6)
+    {
+        Console.WriteLine("Это будний день");
+    }
+    else Console.WriteLine("Это выходной");
+}
